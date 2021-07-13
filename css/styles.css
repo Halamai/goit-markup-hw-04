@@ -327,9 +327,12 @@ ul {
 .worker-social-links-color {
   fill: #afb1b8;
 }
+.worker-social-links-road:hover use,
+.worker-social-links-road:focus use,
 .worker-social-links-road:hover,
 .worker-social-links-road:focus {
   background-color: #2196f3;
+  fill: #ffffff;
 }
 .section-ourcompany {
   padding-top: 94px;
