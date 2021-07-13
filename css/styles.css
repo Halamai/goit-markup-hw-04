@@ -95,6 +95,8 @@ ul {
 }
 .header-title .container {
   display: flex;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 .header-navigation,
 .header-navigation-links,
@@ -107,8 +109,6 @@ ul {
 }
 .header-navigation-tel-mail {
   margin-left: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .header-navigation .link-webstudio {
   padding-top: 25px;
@@ -312,8 +312,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 32px;
-  margin-right: 35px;
   margin-bottom: 30px;
 }
 .worker-social-links {
@@ -328,15 +326,19 @@ ul {
   align-items: center;
   justify-content: center;
 }
+.worker-social-links-color {
+  fill: #afb1b8;
+}
 .worker-social-links-road:hover,
 .worker-social-links-road:focus {
   background-color: #2196f3;
 }
 .section-ourcompany {
-  padding-left: 94px;
+  padding-top: 94px;
   padding-bottom: 94px;
   background: #f5f4fa;
 }
+
 .ourcompany {
   display: flex;
   margin-left: -30px;
@@ -359,7 +361,6 @@ ul {
   color: var(--title-text-color);
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 94px;
 }
 .worker-name {
   font-weight: 500;
@@ -379,42 +380,38 @@ ul {
 .section-customers {
   display: block;
   display: flex;
-  padding-top: 94px;
+
   padding-bottom: 94px;
 }
 .service-icon-svg {
   width: 106px;
   height: 60px;
+  fill: #afb1b8;
 }
 .regular-customers-li {
   color: #afb1b8;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
   width: 170px;
   height: 92px;
 }
-.regular-customers-li:focus,
-.regular-customers-li:hover {
-  border: 1px solid #2196f3;
-}
+
 .servise-icon {
   color: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 16px;
-  margin-right: 32px;
-  margin-bottom: 16px;
-  margin-left: 32px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .servise-icon:focus,
 .servise-icon:hover {
-  fill: #2196f3;
+  border: 1px solid #2196f3;
 }
-.service-icon-svg:focus,
-.service-icon-svg:hover {
+.servise-icon:focus .service-icon-svg,
+.servise-icon:hover .service-icon-svg {
   fill: #2196f3;
 }
 .regular-customers {
@@ -464,6 +461,7 @@ ul {
 .footer-social-links-title {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 .footer-social-links-road {
   height: 100%;
@@ -472,6 +470,7 @@ ul {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
 }
 .footer-social-links-road:hover,
 .footer-social-links-road:focus {
@@ -481,6 +480,7 @@ ul {
   display: flex;
   align-items: normal;
   height: 252px;
+  align-items: baseline;
 }
 .footer-title {
   font-style: normal;
@@ -502,4 +502,7 @@ ul {
   height: 80px;
   margin-left: 70px;
   margin-bottom: 100px;
+}
+.footer-social-links-color {
+  fill: #ffffff;
 }
