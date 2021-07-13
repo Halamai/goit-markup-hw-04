@@ -21,9 +21,15 @@
             <nav class="header-navigation">
                     <a href="index.html" class="link-webstudio">Web<spann class="logo-without-web">Studio</spann></a>
                 <ul class="header-navigation-links">
-                    <li class="header-item"><a href="index.html" class="link link-navigation">Студия</a></li>
-                    <li class="header-item"><a href="portfolio.html" class="link link-navigation">Портфолио</a></li>
-                    <li class="header-item"><a href="kontacts.html" class="link link-navigation">Контакты</a></li> 
+                    <li class="header-item">
+                        <a href="index.html" class="link link-navigation link-navigation">Студия</a>
+                    </li>
+                    <li class="header-item"> 
+                        <a href="portfolio.html" class="link link-navigation">Портфолио</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="kontacts.html" class="link link-navigation">Контакты</a>
+                    </li> 
                 </ul>
              </nav>
                 <ul class="header-navigation-tel-mail">
@@ -47,7 +53,7 @@
         <section class="main-sectioin">
             <div class="container">
                     <h1 class="content-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="button button-push">Заказать услугу</button>
+                    <button type="button" class="button button-push" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -57,7 +63,7 @@
                 <ul class="list-title">
                     <li class="list-title-text">
                         <div class="list-title-text-picture">
-                            <svg class="list-title-picture"  width="70" heigt="70">
+                            <svg class="list-title-picture"  width="70" height="70">
                                 <use href="./images/sprite.svg#icon-antenna-1-1"></use>
                             </svg>
                         </div>
@@ -66,7 +72,7 @@
                         </li>
                     <li class="list-title-text">
                         <div class="list-title-text-picture">
-                            <svg class="list-title-picture"  width="70" heigt="70">
+                            <svg class="list-title-picture"  width="70" height="70">
                                 <use href="./images/sprite.svg#icon-clock-1-1"></use>
                             </svg>
                         </div>
@@ -75,7 +81,7 @@
                     </li>
                     <li class="list-title-text">
                         <div class="list-title-text-picture">
-                            <svg class="list-title-picture" width="70" heigt="70">
+                            <svg class="list-title-picture" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-diagram-1-1" ></use>
                             </svg>
                         </div>
@@ -83,7 +89,7 @@
                         <p class="title-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     <li class="list-title-text">
                         <div class="list-title-text-picture">
-                            <svg class="list-title-picture" width="70" heigt="70">
+                            <svg class="list-title-picture" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-astronaut-1-1" ></use>
                             </svg>
                         </div>
@@ -98,10 +104,24 @@
             <div class="container">  
                 <h2 class="title-work">Чем мы занимаемся</h2>
                 <ul class="whatwedo">
-                    
-                    <li class="whatwedo-work"><img src="images/box1.jpg" alt="программирования" width="370" height="294"></li>
-                    <li class="whatwedo-work"><img src="images/box2.jpg" alt="подключения дивайсов" width="370" height="294"></li>
-                    <li class="whatwedo-work"><img src="images/box3.jpg" alt="соответствие требованиям заказчика" width="370" height="294"></li>
+                    <li class="whatwedo-work">
+                        <div class="picture-explane-wrap">
+                            <img src="images/box1.jpg" alt="программирования" width="370" height="294">
+                            <p class="picture-explane-title">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="whatwedo-work">
+                        <div class="picture-explane-wrap">
+                              <img src="images/box2.jpg" alt="подключения дивайсов" width="370" height="294">
+                              <p class="picture-explane-title">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="whatwedo-work">
+                        <div class="picture-explane-wrap">
+                              <img src="images/box3.jpg" alt="соответствие требованиям заказчика" width="370" height="294">
+                              <p class="picture-explane-title">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -373,6 +393,21 @@
             </div>
         </footer>
 
+        <button class="dada-modal-open-buton" ></button>
+
+        <div class="backdrop is-hidden" data-modal>
+            
+            <div class="modal">
+                <button type="button">
+                    <svg  class="close-btn" data-modal-close width="30" height="30">
+                         <use href="./images/sprite.svg#icon-close-1"></use>
+                    </svg>
+                </button>
+            </div>
+        
+        </div>
+
+     <script src="./js/modal.js"></script>
 </body>
 
 </html>
