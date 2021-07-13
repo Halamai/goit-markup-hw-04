@@ -56,17 +56,18 @@ ul {
   display: block;
 }
 .button-push {
-  background: #2196f3;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  border: none;
+  color: #ffffff;
+  background: #2196f3;
+  margin: 0 auto;
   border: none;
 }
 .button-push:hover,
@@ -78,7 +79,6 @@ ul {
 }
 .link-webstudio {
   font-weight: 700;
-
   font-size: 26px;
   line-height: 1.19;
   color: #2196f3;
@@ -95,8 +95,6 @@ ul {
 }
 .header-title .container {
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 24px;
 }
 .header-navigation,
 .header-navigation-links,
@@ -423,11 +421,8 @@ ul {
 
 .section-footer {
   background: #2f303a;
-  padding-bottom: 60px;
   padding-top: 60px;
   display: flex;
-  height: 252px;
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -455,9 +450,6 @@ ul {
 .mail-footer {
   margin-bottom: 9px;
 }
-.tel-footer {
-  margin-bottom: 60px;
-}
 .footer-social-links-title {
   display: flex;
   align-items: center;
@@ -479,7 +471,6 @@ ul {
 .section-footer .container {
   display: flex;
   align-items: normal;
-  height: 252px;
   align-items: baseline;
 }
 .footer-title {
